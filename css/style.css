@@ -6003,7 +6003,8 @@ h1, h2, h3, h4, h5, h6 {
 
 /* line 7, ../../01 cl html template/03_jun 2019/185 Ecobit SAAS html/sass/_breadcrumb.scss */
 .breadcrumb .breadcrumb_iner {
-  height: 475px;
+  height: 175px;
+  padding: 20px;
   width: 100%;
   display: table;
 }
