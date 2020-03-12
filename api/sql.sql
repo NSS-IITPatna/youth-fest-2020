@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: Mar 12, 2020 at 06:40 AM
+-- Generation Time: Mar 12, 2020 at 10:33 AM
 -- Server version: 5.7.26
 -- PHP Version: 7.3.7
 
@@ -26,7 +26,10 @@ CREATE TABLE `users` (
   `college` varchar(256) NOT NULL,
   `phone` varchar(14) NOT NULL,
   `email` varchar(100) NOT NULL,
-  `address` text NOT NULL
+  `address` text NOT NULL,
+  `dob` varchar(10) NOT NULL,
+  `department` varchar(100) NOT NULL,
+  `degree` varchar(200) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
