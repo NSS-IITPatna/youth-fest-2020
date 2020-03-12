@@ -84,9 +84,9 @@ function registerUser(){
 
 			if(send_email($email,$subject,$msg)){
 
-				$sql="INSERT INTO alumnus( name, email, phone, dob, degree, department, address, college) VALUES('$name', '$email', '$phone', '$dob', '$degree', '$department' '$address', '$college')";
+				$sql="INSERT INTO users( name, email, phone, dob, degree, department, address, college) VALUES('$name', '$email', '$phone', '$dob', '$degree', '$department' '$address', '$college')";
 				$result=query($sql);
-
+				confirm($result);
 				//Composing the response
 				$response['status']=200;
 				$messages[]="You have been registered successfully. Please check your email for more details.";
